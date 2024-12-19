@@ -1,0 +1,36 @@
+﻿<Page x:Class="TechnoServiceGoncharovUP01.Pages.AuthorizePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TechnoServiceGoncharovUP01.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AuthorizePage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Логин" FontSize="24" Style="{StaticResource AddLabel}" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Label Content="Пароль" FontSize="24" Style="{StaticResource AddLabel}" Grid.Column="1" Margin="0,5,10,0" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <TextBox FontSize="24" x:Name="Login" Style="{StaticResource AddTextBox}" Width="159" Grid.Column="2" Grid.Row="1" VerticalAlignment="Bottom"/>
+        <PasswordBox FontSize="24" x:Name="Password" Style="{StaticResource CustomPasswordBox}" Margin="10,10,0,0" Width="159" Grid.Column="2" Grid.Row="2" VerticalAlignment="Top"/>
+        <Button FontSize="24" x:Name="Enter" Content="Войти" Style="{StaticResource CustomButton}"
+             Grid.Column="2" Grid.Row="2" Width="159"
+             Click="Enter_Click"
+             HorizontalAlignment="Left"
+             VerticalAlignment="Bottom" Margin="10,0,0,112" Grid.RowSpan="2"/>
+    </Grid>
+</Page>
